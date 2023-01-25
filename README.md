@@ -1,8 +1,8 @@
 # Svelte Pokedex
 
 Pokedex with simple frontend API containing various animated cards
-![Landing page](examples\firefox_2023-01-25_13-41-52.png)
-![Cards page](examples\firefox_2023-01-25_13-42-34.png)
+![Landing page](examples/firefox_2023-01-25_13-41-52.png)
+![Cards page](examples/firefox_2023-01-25_13-42-34.png)
 
 ## Developing
 
