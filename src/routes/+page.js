@@ -1,9 +1,5 @@
-import { writable } from 'svelte/store';
-
-export const pokemon = writable([]); //allocate space in global store
-
-const fetchPokemon = async (num) => {
-	const url = `https://pokeapi.co/api/v2/pokemon?limit=${num}`;
+export const load = async () => {
+	const url = `https://pokeapi.co/api/v2/pokemon?limit=151`;
 	const res = await fetch(url);
 	const data = await res.json(); //convert response data into an object
 	const loadedPokemon = data.results.map((data, index) => {
@@ -15,6 +11,5 @@ const fetchPokemon = async (num) => {
 			}.png`
 		};
 	});
-	pokemon.set(loadedPokemon); //set map data to store space
+	return { loadedPokemon }; //set map data to store space
 };
-fetchPokemon(150);

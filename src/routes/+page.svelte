@@ -1,17 +1,17 @@
 <script>
-	import { pokemon } from '../stores/pokestore';
 	import Card from '../components/card.svelte';
+	export let data;
 
 	let searchText = '';
 	let filteredPokemon = [];
 
 	$: {
 		if (searchText) {
-			filteredPokemon = $pokemon.filter((mon) =>
+			filteredPokemon = data.loadedPokemon.filter((mon) =>
 				mon.name.toLowerCase().includes(searchText.toLowerCase())
 			);
 		} else {
-			filteredPokemon = [...$pokemon];
+			filteredPokemon = [...data.loadedPokemon];
 		}
 	}
 </script>
