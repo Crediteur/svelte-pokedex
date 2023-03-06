@@ -1,0 +1,1 @@
+const o=async()=>({loadedPokemon:(await(await fetch("https://pokeapi.co/api/v2/pokemon?limit=151")).json()).results.map((t,e)=>({name:t.name,id:e+1,image:`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${e+1}.png`}))}),p=Object.freeze(Object.defineProperty({__proto__:null,load:o},Symbol.toStringTag,{value:"Module"}));export{p as _,o as l};
