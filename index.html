@@ -5,17 +5,20 @@
 		<link rel="icon" href="./svelte-pokedex/favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		<meta http-equiv="content-security-policy" content="">
-		<link href="./svelte-pokedex/_app/immutable/assets/_layout.8065a529.css" rel="stylesheet">
+		<link href="./svelte-pokedex/_app/immutable/assets/_layout.06b7db26.css" rel="stylesheet">
 		<link href="./svelte-pokedex/_app/immutable/assets/_page.3bdfd5ea.css" rel="stylesheet">
-		<link rel="modulepreload" href="./svelte-pokedex/_app/immutable/entry/start.476bea6e.js">
-		<link rel="modulepreload" href="./svelte-pokedex/_app/immutable/chunks/index.8dedf278.js">
-		<link rel="modulepreload" href="./svelte-pokedex/_app/immutable/chunks/singletons.7ed8b76e.js">
-		<link rel="modulepreload" href="./svelte-pokedex/_app/immutable/chunks/paths.7ce2289e.js">
-		<link rel="modulepreload" href="./svelte-pokedex/_app/immutable/entry/app.022af562.js">
-		<link rel="modulepreload" href="./svelte-pokedex/_app/immutable/entry/_layout.svelte.1df0539b.js">
+		<link href="./svelte-pokedex/_app/immutable/assets/loader.6871c4a9.css" rel="stylesheet">
+		<link rel="modulepreload" href="./svelte-pokedex/_app/immutable/entry/start.81df3b87.js">
+		<link rel="modulepreload" href="./svelte-pokedex/_app/immutable/chunks/index.3e0ef386.js">
+		<link rel="modulepreload" href="./svelte-pokedex/_app/immutable/chunks/singletons.fbde50e1.js">
+		<link rel="modulepreload" href="./svelte-pokedex/_app/immutable/chunks/paths.5207956f.js">
+		<link rel="modulepreload" href="./svelte-pokedex/_app/immutable/entry/app.ca55b927.js">
+		<link rel="modulepreload" href="./svelte-pokedex/_app/immutable/entry/_layout.svelte.be2865b4.js">
 		<link rel="modulepreload" href="./svelte-pokedex/_app/immutable/entry/_layout.js.984db11e.js">
 		<link rel="modulepreload" href="./svelte-pokedex/_app/immutable/chunks/_layout.da46b06b.js">
-		<link rel="modulepreload" href="./svelte-pokedex/_app/immutable/entry/_page.svelte.67e83805.js">
+		<link rel="modulepreload" href="./svelte-pokedex/_app/immutable/entry/_page.svelte.7cd30382.js">
+		<link rel="modulepreload" href="./svelte-pokedex/_app/immutable/chunks/stores.bcf50d23.js">
+		<link rel="modulepreload" href="./svelte-pokedex/_app/immutable/chunks/loader.1b12a4c6.js">
 		<link rel="modulepreload" href="./svelte-pokedex/_app/immutable/entry/_page.js.b500b55d.js">
 		<link rel="modulepreload" href="./svelte-pokedex/_app/immutable/chunks/_page.cb93f058.js"><title>Svelte Kit Pokedex</title><!-- HEAD_svelte-vk9flx_START --><!-- HEAD_svelte-vk9flx_END -->
 	</head>
@@ -26,8 +29,9 @@
 <div class="mx-auto max-w-6xl p-8"><nav class="flex w-full justify-between gap-4 px-1"><a class="text-lg" href="/svelte-pokedex/">Home</a>
 	<a class="text-lg" href="/svelte-pokedex/about">About</a></nav>
 	
-
 <h1 class="my-8 text-center text-4xl">Svelte Pokedex</h1>
+
+
 
 <input class="h-14 w-full rounded-md border-2 border-gray-200 p-4 text-lg" placeholder="Search Pokemon" value="">
 
@@ -182,15 +186,14 @@
 	<p class="text-center text-lg font-semibold capitalize tracking-wide">dragonair</p></a><a href="/svelte-pokedex/pokemon/149" class="flex h-64 flex-col items-center justify-center rounded-md bg-lime-200 shadow-md hover:bg-emerald-100"><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/149.png" class="h-40 w-40" alt="sprite image of dragonite">
 	<p class="text-center text-lg font-semibold capitalize tracking-wide">dragonite</p></a><a href="/svelte-pokedex/pokemon/150" class="flex h-64 flex-col items-center justify-center rounded-md bg-lime-200 shadow-md hover:bg-emerald-100"><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png" class="h-40 w-40" alt="sprite image of mewtwo">
 	<p class="text-center text-lg font-semibold capitalize tracking-wide">mewtwo</p></a><a href="/svelte-pokedex/pokemon/151" class="flex h-64 flex-col items-center justify-center rounded-md bg-lime-200 shadow-md hover:bg-emerald-100"><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png" class="h-40 w-40" alt="sprite image of mew">
-	<p class="text-center text-lg font-semibold capitalize tracking-wide">mew</p></a></div>
-
-</div>
+	<p class="text-center text-lg font-semibold capitalize tracking-wide">mew</p></a>
+</div></div>
 
 
 			
 			<script>
 				{
-					__sveltekit_7j3ref = {
+					__sveltekit_1n4urel = {
 						env: {},
 						assets: "/svelte-pokedex",
 						base: new URL("./svelte-pokedex", location).pathname,
@@ -200,10 +203,10 @@
 					const data = [null,null];
 
 					Promise.all([
-						import("./svelte-pokedex/_app/immutable/entry/start.476bea6e.js"),
-						import("./svelte-pokedex/_app/immutable/entry/app.022af562.js")
+						import("./svelte-pokedex/_app/immutable/entry/start.81df3b87.js"),
+						import("./svelte-pokedex/_app/immutable/entry/app.ca55b927.js")
 					]).then(([kit, app]) => {
-						kit.start(app, __sveltekit_7j3ref.element, {
+						kit.start(app, __sveltekit_1n4urel.element, {
 							node_ids: [0, 2],
 							data,
 							form: null,
