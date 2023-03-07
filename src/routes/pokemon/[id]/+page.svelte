@@ -1,4 +1,9 @@
 <script>
+	import { navigating } from '$app/stores';
+	import { loading } from '$lib/loading';
+	$: $loading = !!$navigating;
+
+	import Loader from '../../../components/loader.svelte';
 	import FlipCard from '../../../components/flipCard.svelte';
 	import FlipBook from '../../../components/flipBook.svelte';
 	import CarouselCard from '../../../components/carouselCard.svelte';
@@ -25,6 +30,12 @@
 	<title>{capitalize(mon.name)} Page</title>
 </svelte:head>
 <svelte:window on:keydown|preventDefault={onKeyDown} />
+
+{#if $loading}
+	<div class="pointer-events-none fixed left-1/2 top-1/2 z-10 -translate-x-1/2 -translate-y-1/2">
+		<Loader size={120} />
+	</div>
+{/if}
 
 <div class="py-8" />
 <!-- big-card component -->
