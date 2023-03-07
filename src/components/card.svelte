@@ -1,9 +1,10 @@
 <script>
+	import { base } from '$app/paths';
 	export let mon;
 </script>
 
 <a
-	href="pokemon/{mon.id}"
+	href="{base}/pokemon/{mon.id}"
 	class="flex h-64 flex-col items-center justify-center rounded-md bg-lime-200 shadow-md hover:bg-emerald-100"
 >
 	<img src={mon.image} class="h-40 w-40" alt="sprite image of {mon.name}" />

@@ -6,12 +6,13 @@
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
-		"deploy": "npx gh-pages -d dist",
+		"deploy": "npx gh-pages -d build",
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
 		"format": "prettier --plugin-search-dir . --write ."
 	},
 	"devDependencies": {
-		"@sveltejs/kit": "^1.0.2",
+		"@sveltejs/adapter-static": "^2.0.1",
+		"@sveltejs/kit": "^1.10.0",
 		"autoprefixer": "^10.4.13",
 		"eslint": "^8.28.0",
 		"eslint-config-prettier": "^8.5.0",

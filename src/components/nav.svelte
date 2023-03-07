@@ -1,4 +1,8 @@
-<nav class="px-1 flex justify-between w-full gap-4">
-	<a class="text-lg" href="/">Home</a>
-	<a class="text-lg" href="/about">About</a>
+<script>
+	import { base } from '$app/paths';
+</script>
+
+<nav class="flex w-full justify-between gap-4 px-1">
+	<a class="text-lg" href="{base}/"> Home</a>
+	<a class="text-lg" href="{base}/about"> About</a>
 </nav>
