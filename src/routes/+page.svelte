@@ -24,7 +24,7 @@
 <svelte:head>
 	<title>Svelte Kit Pokedex</title>
 </svelte:head>
-<h1 class="my-8 text-center text-4xl">Svelte Pokedex</h1>
+<h1 class="my-8 text-center text-4xl font-semibold">Svelte Pokedex</h1>
 
 {#if $loading}
 	<div class="pointer-events-none fixed left-1/2 top-1/2 z-10 -translate-x-1/2 -translate-y-1/2">

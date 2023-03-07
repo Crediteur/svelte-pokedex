@@ -3,6 +3,6 @@
 </script>
 
 <nav class="flex w-full justify-between gap-4 px-1">
-	<a class="text-lg" href="{base}/"> Home</a>
-	<a class="text-lg" href="{base}/about"> About</a>
+	<a href="{base}/" class="text-2xl hover:text-slate-600 hover:underline"> Home</a>
+	<a href="{base}/about" class="text-2xl hover:text-slate-600 hover:underline"> About</a>
 </nav>
